@@ -9,7 +9,7 @@ namespace KUBike_REST.DBUTil
 {
     public class ManageUser
     {
-        private const string connString = @"";
+        private const string connString = @"Server=tcp:mort-db-server.database.windows.net,1433;Initial Catalog = mort - db; Persist Security Info=False;User ID = mort - admin; Password=Secret1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
 
         private const string GET_ALL_SQL = "select * from Users";
         public IList<User> HentAlle()
