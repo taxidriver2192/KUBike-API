@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUBike_REST", "KUBike_REST\KUBike_REST.csproj", "{7E0B3D41-A243-497F-B07D-9D3942450BE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KUBike_RESTTests", "KUBike_RESTTests\KUBike_RESTTests.csproj", "{310A1639-CB31-49AB-A86E-66354EDE13AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KUBike_RESTTests", "KUBike_RESTTests\KUBike_RESTTests.csproj", "{310A1639-CB31-49AB-A86E-66354EDE13AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lib", "lib\lib.csproj", "{7AE6BDFC-E345-4D5E-8840-CBA782206B12}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{310A1639-CB31-49AB-A86E-66354EDE13AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{310A1639-CB31-49AB-A86E-66354EDE13AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{310A1639-CB31-49AB-A86E-66354EDE13AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE6BDFC-E345-4D5E-8840-CBA782206B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE6BDFC-E345-4D5E-8840-CBA782206B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE6BDFC-E345-4D5E-8840-CBA782206B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE6BDFC-E345-4D5E-8840-CBA782206B12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
