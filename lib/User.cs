@@ -26,5 +26,7 @@ namespace lib
         public string User_password { get; set; }
         public int User_mobile { get; set; }
         public int Account_status_id { get; set; }
+
+        
     }
 }

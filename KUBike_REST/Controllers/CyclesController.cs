@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using KUBike_REST.DBUTil;
+using lib;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,11 +14,12 @@ namespace KUBike_REST.Controllers
     [ApiController]
     public class CyclesController : ControllerBase
     {
+        private ManageCycle mgr = new ManageCycle();
         // GET: api/<CyclesController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<Cycle> Get()
         {
-            return new string[] { "value1", "value2" };
+            return mgr.HentAlle();
         }
 
         // GET api/<CyclesController>/5

@@ -1,10 +1,22 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using KUBike_REST.Controllers;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
-namespace KUBike_RESTTests.Controllers
+namespace KUBike_REST.Controllers.Tests
 {
-    class CyclesControllerTests
+    [TestClass()]
+    public class CyclesControllerTests
     {
+        CyclesController cmd = new CyclesController();
+
+        [TestMethod()]
+        //For at testet GETALL funktionen i unittest. Vi tester dette igennem når vi tjekker for mange items der er i listen. Derfor bruger vi Assert.AreEqual, til at se om de har samme antal af items i listen. 
+        public void GetTest()
+        {
+            Assert.AreEqual(3, cmd.Get().Count());
+        }
     }
 }
