@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KUBike_REST\KUBike_REST.csproj" />
+    <ProjectReference Include="..\KUBike_REST_Core_5\KUBike_REST_Core_5.csproj" />
+    <ProjectReference Include="..\lib\lib.csproj" />
   </ItemGroup>
 
 </Project>

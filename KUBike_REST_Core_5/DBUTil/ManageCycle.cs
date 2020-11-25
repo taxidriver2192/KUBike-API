@@ -2,7 +2,7 @@
 using System.Data.SqlClient;
 using lib;
 
-namespace KUBike_REST.DBUTil
+namespace KUBike_REST_Core_5.DBUTil
 {
     public class ManageCycle
     {

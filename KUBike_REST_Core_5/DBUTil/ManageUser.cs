@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using lib;
 
-namespace KUBike_REST.DBUTil
+namespace KUBike_REST_Core_5.DBUTil
 {
     public class ManageUser
     {
-        private const string connString =
-            @"Server=tcp:mort-db-server.database.windows.net;Initial Catalog=mort-db;User ID=mort-admin;Password=Secret1!;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
-        // (OLD)                           @"Server=tcp:mort-db-server.database.windows.net,1433;Initial Catalog=mort-db; Persist Security Info=False;User ID = mort - admin; Password=Secret1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
-
+        private const string connString = @"Server=tcp:mort-db-server.database.windows.net;
+                                            Initial Catalog=mort-db;User ID=mort-admin;Password=Secret1!;
+                                            Connect Timeout=30;
+                                            Encrypt=True;
+                                            TrustServerCertificate=False;
+                                            ApplicationIntent=ReadWrite;
+                                            MultiSubnetFailover=False";
 
         private const string GET_ALL_SQL = "select * from Users";
 
-        private const string GET_ONE_SQL = "select * from Users where id = @Id";
+        private const string GET_ONE_SQL = "select * from Users " +
+                                           "where id = @Id";
 
-        private const string INSERT_SQL =
-            "insert into User(user_firstname, user_lastname, user_email, user_password, user_mobile, account_status_id) values (@fname, @lname, @email, @password, @mobile, @asid)";
+        private const string INSERT_SQL = "insert into User" +
+                                          "(user_firstname, user_lastname, user_email, user_password, user_mobile, account_status_id) " +
+                                          "values " +
+                                          "(@fname, @lname, @email, @password, @mobile, @asid)";
 
         public IList<User> HentAlle()
         {
