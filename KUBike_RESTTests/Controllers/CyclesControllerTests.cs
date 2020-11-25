@@ -16,7 +16,7 @@ namespace KUBike_REST.Controllers.Tests
         //For at testet GETALL funktionen i unittest. Vi tester dette igennem når vi tjekker for mange items der er i listen. Derfor bruger vi Assert.AreEqual, til at se om de har samme antal af items i listen. 
         public void GetTest()
         {
-            Assert.AreEqual(3, cmd.Get().Count());
+            Assert.AreEqual(1, cmd.Get().Count());
         }
     }
 }
