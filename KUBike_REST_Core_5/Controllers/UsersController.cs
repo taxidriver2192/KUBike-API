@@ -35,5 +35,11 @@ namespace KUBike_REST_Core_5.Controllers
         {
             mgr.OpretUser(value);
         }
+
+        [HttpGet("{email}/{password}")]
+        public bool Login(string email, string password)
+        {
+            return mgr.Login(email, password);
+        }
     }
 }

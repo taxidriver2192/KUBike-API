@@ -61,6 +61,28 @@ namespace KUBike_REST_Core_5.DBUTil
             return user;
         }
 
+        private const string LOGIN_SQL = "select user_id from users where user_email = @email and user_password = @password";
+        public bool Login(string email, string password)
+        {
+            using (var conn = new SqlConnection(connString))
+            {
+                conn.Open();
+
+                using (var cmd = new SqlCommand(LOGIN_SQL, conn))
+                {
+                    cmd.Parameters.AddWithValue("@email", email);
+                    cmd.Parameters.AddWithValue("@password", password);
+
+
+                    SqlDataReader c = cmd.ExecuteReader();
+
+                    return c.HasRows;
+                    
+                }
+            }
+
+        }
+
         public bool OpretUser(User user)
         {
             var OK = true;
