@@ -18,7 +18,7 @@ namespace KUBike_REST_Core_5.DBUTil
         private const string GET_ALL_SQL = "select * from Users";
 
         private const string GET_ONE_SQL = "select * from Users " +
-                                           "where id = @Id";
+                                           "where user_id = @Id";
 
         private const string INSERT_SQL = "insert into User" +
                                           "(user_firstname, user_lastname, user_email, user_password, user_mobile, account_status_id) " +
