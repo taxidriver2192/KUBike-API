@@ -98,7 +98,7 @@ namespace KUBike_REST_Core_5.DBUTil
                     cmd.Parameters.AddWithValue("@email", user.User_email);
                     cmd.Parameters.AddWithValue("@password", user.User_password);
                     cmd.Parameters.AddWithValue("@mobile", user.User_mobile);
-                    cmd.Parameters.AddWithValue("@asid", user.Account_status_id);
+                    cmd.Parameters.AddWithValue("@asid", 1);
 
                     try
                     {
